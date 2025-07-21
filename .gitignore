@@ -1,0 +1,45 @@
+# Build directories
+bin/
+cmake-build-debug/
+cmake-build-release/
+build/
+node_modules/
+
+# Compiled executables
+*.exe
+*.out
+*.o
+*.obj
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+
+# Visual Studio files
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Debug files
+*.pdb
+*.ilk
