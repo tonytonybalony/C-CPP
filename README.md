@@ -1,64 +1,110 @@
-# C Coding Practice Project
+# C/C++ Programming Practice Repository
 
-This project contains various implementations of algorithms and data structures in C, specifically designed for coding practice on platforms like LeetCode. The project is organized into several directories based on the type of problems and data structures.
+A comprehensive collection of C and C++ programming examples, algorithms, data structures, and coding practice problems. This repository serves as a learning resource and reference for fundamental programming concepts in both C and C++.
 
-## Project Structure
+### **Executable Storage**
+All compiled executables (`.exe` files) are automatically stored in the `bin/` directory to keep your project organized and have your folder stay clean.
+
+
+## 🚀 Project Structure
 
 ```
-C,C++
-├── src
-│   ├── leetcode
-│   │   ├── easy
-│   │   │   └── two_sum.c
-│   │   ├── medium
-│   │   │   └── add_two_numbers.c
-│   │   └── hard
-│   │       └── median_sorted_arrays.c
-│   ├── data_structures
-│   │   ├── stack.c
-│   │   ├── queue.c
-│   │   └── linked_list.c
-│   ├── algorithms
-│   │   ├── sorting
-│   │   │   └── quicksort.c
-│   │   └── searching
-│   │       └── binary_search.c
-│   └── utils
-│       └── common.h
-├── tests
-│   └── test_runner.c
-├── Makefile
-├── CMakeLists.txt
-└── README.md
+C,C++/
+├── src/
+│   ├── c/                          # C Programming
+│   │   ├── algorithms/
+│   │   │   ├── searching/
+│   │   │   │   └── binary_search.c
+│   │   │   └── sorting/
+│   │   │       └── quicksort.c
+│   │   ├── data_structures/
+│   │   │   ├── array.c
+│   │   │   ├── linked_list.c
+│   │   │   ├── queue.c
+│   │   │   └── stack.c
+│   │   ├── examples/              # Basic C examples
+│   │   │   ├── hello_world.c
+│   │   │   ├── cexample1.c - cexample10.c
+│   │   │   └── ...
+│   │   ├── leetcode/              # LeetCode solutions in C
+│   │   │   ├── easy/
+│   │   │   │   └── two_sum.c
+│   │   │   ├── medium/
+│   │   │   │   └── add_two_numbers.c
+│   │   │   └── hard/
+│   │   │       └── median_sorted_arrays.c
+│   │   ├── projects/              # Practical C projects
+│   │   │   ├── guessing_game.c
+│   │   │   └── task_manager.c
+│   │   └── utils/
+│   │       └── common.h
+│   ├── cpp/                       # C++ Programming
+│   │   ├── examples/              # Basic C++ examples
+│   │   │   ├── cppexample1.cpp - cppexample10.cpp
+│   │   │   └── ...
+│   │   ├── modern_cpp/            # Modern C++ features
+│   │   │   └── modern_features.cpp
+│   │   ├── oop/                   # Object-Oriented Programming
+│   │   │   └── person_student.cpp
+│   │   └── stl/                   # Standard Template Library
+│   │       └── stl_examples.cpp
+│   └── leetcode/                  # Additional LeetCode solutions
+│       └── medium/
+│           └── add_two_numbers.c
+├── tests/
+│   └── test_runner.c              # Test suite
+├── bin/                           # Compiled executables
+├── .gitignore                     # Git ignore rules
+├── CMakeLists.txt                 # CMake build configuration
+└── README.md                      # This file
 ```
 
-## Setup Instructions
+## 🛠️ Build & Run
 
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Use the provided `Makefile` or `CMakeLists.txt` to build the project.
+### Using VS Code (Recommended)
+**Quick Run Options:**
+- **▶️ Run Button** - Click the run button in the top-right corner of VS Code
+- **Ctrl+F5** - Run without debugging
+- **F5** - Run with debugging
 
-## Usage
+### Manual Compilation
+```bash
+# For C files
+gcc -Wall -Wextra filename.c -o bin/filename.exe
 
-- Each implementation can be tested individually by running the corresponding source file.
-- The `test_runner.c` file serves as a test suite to validate the functionality of the implemented algorithms and data structures.
+# For C++ files
+g++ -std=c++17 filename.cpp -o bin/filename.exe
 
-## Implemented Algorithms and Data Structures
+# Run the executable
+./bin/filename.exe
+```
 
-- **LeetCode Problems:**
-  - Two Sum (Easy)
-  - Add Two Numbers (Medium)
-  - Median of Two Sorted Arrays (Hard)
+### Using CMake
+```bash
+mkdir build && cd build
+cmake ..
+make
+```
 
-- **Data Structures:**
-  - Stack
-  - Queue
-  - Singly Linked List
+## 📚 What's Included
 
-- **Algorithms:**
-  - Quick Sort
-  - Binary Search
+### **C Programming**
+- **Algorithms:** Binary Search, QuickSort
+- **Data Structures:** Arrays, Linked Lists, Stacks, Queues
+- **Examples:** My C Lab environment
+- **Projects:** Guessing Game, Task Manager
+- **LeetCode:** Easy, Medium, and Hard problems
 
-## Contribution
+### **C++ Programming**
+- **Examples:** My C++ Lab environment
+- **OOP:** Object-oriented programming examples
+- **Modern C++:** C++17 features and best practices
+- **STL:** Standard Template Library usage examples
 
-Feel free to contribute by adding new algorithms, data structures, or improving existing implementations. Please ensure to follow the project's coding standards and include appropriate test cases.
+##  Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-algorithm`)
+3. Commit your changes (`git commit -m 'Add new sorting algorithm'`)
+4. Push to the branch (`git push origin feature/new-algorithm`)
+5. Open a Pull Request
